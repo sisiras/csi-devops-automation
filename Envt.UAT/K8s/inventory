@@ -4,6 +4,6 @@ W3S2CSNAPP01.moh.gov.sa ansible_host=10.4.41.183 kubernetes_role=node
 W3S2CSNAPP02.moh.gov.sa ansible_host=10.4.41.184 kubernetes_role=node
 
 [kube:vars]
-ansible_ssh_user=vagrant
-ansible_ssh_private_key_file=~/.vagrant.d/insecure_private_key
+ansible_ssh_user=root
+ansible_ssh_private_key_file=/root/.ssh/id_rsa
 kubernetes_apiserver_advertise_address=10.4.41.180
