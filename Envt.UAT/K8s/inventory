@@ -1,7 +1,7 @@
 [kube]
-S2-UAT-K8S-M01 ansible_host=10.4.41.180 kubernetes_role=master
-S2-UAT-K8S-W01 ansible_host=10.4.41.183 kubernetes_role=node
-S2-UAT-K8S-W02 ansible_host=10.4.41.184 kubernetes_role=node
+W3S2CSNK8M01.moh.gov.sa ansible_host=10.4.41.180 kubernetes_role=master
+W3S2CSNAPP01.moh.gov.sa ansible_host=10.4.41.183 kubernetes_role=node
+W3S2CSNAPP02.moh.gov.sa ansible_host=10.4.41.184 kubernetes_role=node
 
 [kube:vars]
 ansible_ssh_user=vagrant
