@@ -1,0 +1,9 @@
+[kube]
+S2-UAT-K8S-M01 ansible_host=10.4.41.180 kubernetes_role=master
+S2-UAT-K8S-W01 ansible_host=10.4.41.183 kubernetes_role=node
+S2-UAT-K8S-W02 ansible_host=10.4.41.184 kubernetes_role=node
+
+[kube:vars]
+ansible_ssh_user=vagrant
+ansible_ssh_private_key_file=~/.vagrant.d/insecure_private_key
+kubernetes_apiserver_advertise_address=10.4.41.180

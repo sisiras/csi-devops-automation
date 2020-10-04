@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: liquibase
+  namespace: default
+  labels:
+    app: liquibase
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: liquibase
+  template:
+    metadata:
+      labels:
+        app: liquibase
+    spec:
+      containers:
+      - name: liquibase
+        image: sisiras/liquibase
+        ports:
+        - containerPort: 80
