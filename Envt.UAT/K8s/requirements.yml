@@ -4,3 +4,4 @@ roles:
   - name: geerlingguy.swap
   - name: geerlingguy.docker
   - name: geerlingguy.kubernetes
+  - name: geerlingguy.repo-epel
