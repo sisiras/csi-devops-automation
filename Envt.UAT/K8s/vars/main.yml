@@ -9,7 +9,7 @@ swap_file_state: absent
 swap_file_path: /dev/mapper/centos-swap
 
 # Kubernetes configuration.
-kubernetes_version: '1.19'
+kubernetes_version: '1.18'
 kubernetes_allow_pods_on_master: false
-kubernetes_apiserver_advertise_address: '10.4.41.180'
+kubernetes_apiserver_advertise_address: '10.4.41.181'
 kubernetes_kubelet_extra_args: '--node-ip={{ ansible_host }}'
